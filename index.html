@@ -4,80 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator-app-main.</title>
-    <link rel="shortcut icon" href="image/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="ball.css">
-    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <title>My Tick Tack Toe Game.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
 </head>
 <body>
-    <div id="main-container">
-
-
-    <nav>
-            <h2 id="hside">calc</h2>
-            <div class="btn-side">
-                    <p id="thee" class="the">THEME</p>
-              <div id="toggle-container">
-                <div id="red-container">
-                    <div class="redButton"></div>
-                  </div>
-                  
-                  <div class="theme-change">
-                    
-                    <div id="oggle-txt1" class="toggle-txt" onclick="theme1()">1</div>
-                    <div id="oggle-txt2" class="toggle-txt" onclick="theme2()">2</div>
-                    <div id="oggle-txt3" class="toggle-txt" onclick="theme3()">3</div>  
-                </div>
-
-                
-            </div>
-
-            </div>
-    </nav>
-
-
-    <main>
-        <div>
-            <input type="text" id="input-side" name="display" readonly>
-        </div>
-
-    </main>
-
-    <section id="number-section">
-        <div class="num-container">
-            <div class="numerals" onclick="answer.value += '7'">7</div>
-            <div class="numerals" onclick="answer.value += '8'">8</div>
-            <div class="numerals" onclick="answer.value += '9'">9</div>
-            <div id="del" class="numerals del" onclick="answer.value = answer.value.toString().slice(0,-1)">DEL</div>
-        </div>
-
-        <div class="num-container middle">
-            <div class="numerals" onclick="answer.value += '4'">4</div>
-            <div class="numerals" onclick="answer.value += '5'">5</div>
-            <div class="numerals" onclick="answer.value += '6'">6</div>
-            <div class="numerals" onclick="answer.value += '+'">+</div>
-        </div>
-
-        <div class="num-container middle">
-            <div class="numerals" onclick="answer.value += '1'">1</div>
-            <div class="numerals" onclick="answer.value += '2'">2</div>
-            <div class="numerals" onclick="answer.value += '3'">3</div>
-            <div class="numerals" onclick="answer.value += '-'">-</div>
-        </div>
-
-        <div class="num-container middle">
-            <div class="numerals" onclick="answer.value += '.'">.</div>
-            <div class="numerals" onclick="answer.value += '0'">0</div>
-            <div class="numerals" onclick="answer.value += '/'">/</div>
-            <div class="numerals" onclick="answer.value += '*'">x</div>
-        </div>
-
-        <div class="num-container middle">
-            <div id="reset" class="numerals reset" onclick="answer.value = ''">RESET</div>
-            <div id="equal" class="numerals equal" onclick="answer.value = eval(answer.value)">=</div>
-        </div> 
-    </section>
-
-    </div> 
-    <script src="cat.js"></script>
-</bod
+<div id="gameContainer">
+    <h1>Tic Tac Toe <span style='font-size:70px;'>&#129409;</span></h1>
+    <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+    </div>
+    <h2 id="statusText"></h2>
+    <button id="restartBtn">Restart</button>
+</div>
+<script src="file.js"></script>
+</body>
+</html>
